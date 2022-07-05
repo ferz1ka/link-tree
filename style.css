@@ -28,7 +28,7 @@ body {
 .container {
   width: 300px;
   text-align: center;
-  animation: anim 7.5s ease-in-out infinite;
+  animation: anim 3.5s ease-in-out alternate-reverse infinite;
 }
 
 img.profile {
@@ -108,22 +108,10 @@ ul li a:hover {
 @keyframes anim {
 
   0% {
-    transform: translateY(-5px);
-  }
-
-  25% {
-    transform: translateY(5px);
-  }
-
-  50% {
-    transform: translateY(-5px);
-  }
-
-  75% {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
 
   100% {
-    transform: translateY(-5px);
+    transform: translateY(15px);
   }
 }
